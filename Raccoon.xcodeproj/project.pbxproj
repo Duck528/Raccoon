@@ -17,6 +17,13 @@
 		93719A15218F2948000FB8F7 /* Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93719A14218F2948000FB8F7 /* Gallery.framework */; };
 		93719A17218F2958000FB8F7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93719A16218F2958000FB8F7 /* RxCocoa.framework */; };
 		93719A19218F2968000FB8F7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93719A18218F2968000FB8F7 /* RxSwift.framework */; };
+		93719A1F218F2AC8000FB8F7 /* PlayList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93719A1E218F2AC8000FB8F7 /* PlayList.storyboard */; };
+		93719A21218F2ACF000FB8F7 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93719A20218F2ACF000FB8F7 /* Player.storyboard */; };
+		93719A23218F2B9D000FB8F7 /* PlayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A22218F2B9D000FB8F7 /* PlayListController.swift */; };
+		93719A25218F2BB7000FB8F7 /* PlayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A24218F2BB7000FB8F7 /* PlayListViewModel.swift */; };
+		93719A28218F2C00000FB8F7 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A27218F2C00000FB8F7 /* Bindable.swift */; };
+		93719A2A218F2E6B000FB8F7 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A29218F2E6B000FB8F7 /* Permission.swift */; };
+		93719A2C218F2EA9000FB8F7 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A2B218F2EA9000FB8F7 /* BaseDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		93719A14218F2948000FB8F7 /* Gallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gallery.framework; path = Carthage/Build/iOS/Gallery.framework; sourceTree = "<group>"; };
 		93719A16218F2958000FB8F7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		93719A18218F2968000FB8F7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		93719A1E218F2AC8000FB8F7 /* PlayList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayList.storyboard; sourceTree = "<group>"; };
+		93719A20218F2ACF000FB8F7 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		93719A22218F2B9D000FB8F7 /* PlayListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListController.swift; sourceTree = "<group>"; };
+		93719A24218F2BB7000FB8F7 /* PlayListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewModel.swift; sourceTree = "<group>"; };
+		93719A27218F2C00000FB8F7 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		93719A29218F2E6B000FB8F7 /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		93719A2B218F2EA9000FB8F7 /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,9 @@
 				935D6EF521873CBE006D6ACB /* Main.storyboard */,
 				93719A10218EE67C000FB8F7 /* RootViewController.swift */,
 				935D6EFA21873CBF006D6ACB /* LaunchScreen.storyboard */,
+				93719A1B218F2AA1000FB8F7 /* Player */,
+				93719A1A218F2A86000FB8F7 /* PlayList */,
+				93719A26218F2BE5000FB8F7 /* Util */,
 				93719A0F218EE65D000FB8F7 /* Supporting Files */,
 				93719A0E218EE64B000FB8F7 /* Resources */,
 			);
@@ -159,6 +176,34 @@
 				93719A14218F2948000FB8F7 /* Gallery.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93719A1A218F2A86000FB8F7 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				93719A1E218F2AC8000FB8F7 /* PlayList.storyboard */,
+				93719A22218F2B9D000FB8F7 /* PlayListController.swift */,
+				93719A24218F2BB7000FB8F7 /* PlayListViewModel.swift */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		93719A1B218F2AA1000FB8F7 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				93719A20218F2ACF000FB8F7 /* Player.storyboard */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		93719A26218F2BE5000FB8F7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				93719A27218F2C00000FB8F7 /* Bindable.swift */,
+				93719A29218F2E6B000FB8F7 /* Permission.swift */,
+				93719A2B218F2EA9000FB8F7 /* BaseDAO.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +311,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93719A1F218F2AC8000FB8F7 /* PlayList.storyboard in Resources */,
 				935D6EFC21873CBF006D6ACB /* LaunchScreen.storyboard in Resources */,
+				93719A21218F2ACF000FB8F7 /* Player.storyboard in Resources */,
 				935D6EF921873CBF006D6ACB /* Assets.xcassets in Resources */,
 				935D6EF721873CBE006D6ACB /* Main.storyboard in Resources */,
 			);
@@ -316,7 +363,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93719A28218F2C00000FB8F7 /* Bindable.swift in Sources */,
+				93719A25218F2BB7000FB8F7 /* PlayListViewModel.swift in Sources */,
+				93719A2C218F2EA9000FB8F7 /* BaseDAO.swift in Sources */,
+				93719A2A218F2E6B000FB8F7 /* Permission.swift in Sources */,
 				935D6EF221873CBE006D6ACB /* AppDelegate.swift in Sources */,
+				93719A23218F2B9D000FB8F7 /* PlayListController.swift in Sources */,
 				93719A11218EE67C000FB8F7 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

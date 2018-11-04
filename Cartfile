@@ -1,2 +1,3 @@
 github "hyperoslo/Gallery"
 github "ReactiveX/RxSwift" ~> 4.2
+github "realm/realm-cocoa" ~> 3.9
