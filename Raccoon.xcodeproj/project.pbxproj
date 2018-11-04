@@ -32,6 +32,10 @@
 		93719A3A218F370E000FB8F7 /* PlayListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A39218F370E000FB8F7 /* PlayListCellViewModel.swift */; };
 		93719A3D218F3B72000FB8F7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A3C218F3B72000FB8F7 /* RootViewModel.swift */; };
 		93719A40218F48C2000FB8F7 /* CardsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A3F218F48C2000FB8F7 /* CardsLayout.swift */; };
+		93719A43218F62DC000FB8F7 /* PlayListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A42218F62DC000FB8F7 /* PlayListItem.swift */; };
+		93719A45218F638F000FB8F7 /* PlayListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A44218F638F000FB8F7 /* PlayListService.swift */; };
+		93719A47218F63E7000FB8F7 /* PlayListDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A46218F63E7000FB8F7 /* PlayListDAO.swift */; };
+		93719A49218F64F4000FB8F7 /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A48218F64F4000FB8F7 /* ImageSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		93719A39218F370E000FB8F7 /* PlayListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCellViewModel.swift; sourceTree = "<group>"; };
 		93719A3C218F3B72000FB8F7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		93719A3F218F48C2000FB8F7 /* CardsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsLayout.swift; sourceTree = "<group>"; };
+		93719A42218F62DC000FB8F7 /* PlayListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListItem.swift; sourceTree = "<group>"; };
+		93719A44218F638F000FB8F7 /* PlayListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListService.swift; sourceTree = "<group>"; };
+		93719A46218F63E7000FB8F7 /* PlayListDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListDAO.swift; sourceTree = "<group>"; };
+		93719A48218F64F4000FB8F7 /* ImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +214,9 @@
 				93719A24218F2BB7000FB8F7 /* PlayListViewModel.swift */,
 				93719A37218F368D000FB8F7 /* PlayListCell.swift */,
 				93719A39218F370E000FB8F7 /* PlayListCellViewModel.swift */,
+				93719A44218F638F000FB8F7 /* PlayListService.swift */,
+				93719A46218F63E7000FB8F7 /* PlayListDAO.swift */,
+				93719A42218F62DC000FB8F7 /* PlayListItem.swift */,
 			);
 			path = PlayList;
 			sourceTree = "<group>";
@@ -234,6 +245,7 @@
 				93719A27218F2C00000FB8F7 /* Bindable.swift */,
 				93719A29218F2E6B000FB8F7 /* Permission.swift */,
 				93719A2B218F2EA9000FB8F7 /* BaseDAO.swift */,
+				93719A48218F64F4000FB8F7 /* ImageSource.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -423,12 +435,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93719A45218F638F000FB8F7 /* PlayListService.swift in Sources */,
 				93719A40218F48C2000FB8F7 /* CardsLayout.swift in Sources */,
+				93719A47218F63E7000FB8F7 /* PlayListDAO.swift in Sources */,
 				93719A28218F2C00000FB8F7 /* Bindable.swift in Sources */,
 				93719A34218F3355000FB8F7 /* UIWindow+Extension.swift in Sources */,
 				93719A25218F2BB7000FB8F7 /* PlayListViewModel.swift in Sources */,
 				93719A36218F33D6000FB8F7 /* UIView+Extension.swift in Sources */,
 				93719A2C218F2EA9000FB8F7 /* BaseDAO.swift in Sources */,
+				93719A43218F62DC000FB8F7 /* PlayListItem.swift in Sources */,
+				93719A49218F64F4000FB8F7 /* ImageSource.swift in Sources */,
 				93719A2A218F2E6B000FB8F7 /* Permission.swift in Sources */,
 				935D6EF221873CBE006D6ACB /* AppDelegate.swift in Sources */,
 				93719A23218F2B9D000FB8F7 /* PlayListController.swift in Sources */,

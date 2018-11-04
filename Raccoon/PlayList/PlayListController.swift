@@ -13,6 +13,10 @@ import RxCocoa
 class PlayListController: UIViewController, Bindable {
     typealias ViewModelType = PlayListViewModel
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    private let cellReuseID = "CardCell"
+    
     var viewModel: PlayListViewModel!
     
     func bindViewModel() {
@@ -26,4 +30,8 @@ extension PlayListController {
         let vc = sb.instantiateViewController(withIdentifier: "PlayList") as! PlayListController
         return vc
     }
+}
+
+extension PlayListController: UICollectionViewDataSource {
+    
 }
