@@ -19,10 +19,13 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-Ug-eIx">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="tNk-CF-oQX" kind="embed" id="9bc-Cb-kDk"/>
+                                </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNh-UE-LKt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="GHb-uR-PSZ"/>
                                 </constraints>
@@ -30,8 +33,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yw6-Ug-eIx" secondAttribute="bottom" id="27c-uZ-6He"/>
                             <constraint firstItem="yw6-Ug-eIx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CzQ-82-rmm"/>
+                            <constraint firstAttribute="bottom" secondItem="yw6-Ug-eIx" secondAttribute="bottom" id="Mmr-hF-udZ"/>
                             <constraint firstItem="tNh-UE-LKt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UyG-R4-dzh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tNh-UE-LKt" secondAttribute="trailing" id="aC2-xb-PD5"/>
                             <constraint firstItem="yw6-Ug-eIx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e2q-vK-aKX"/>
@@ -49,6 +52,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--PlayList-->
+        <scene sceneID="e8w-ij-y5x">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayList" referencedIdentifier="PlayList" id="tNk-CF-oQX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIR-re-ONs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GUy-00-I3p">

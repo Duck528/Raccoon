@@ -40,10 +40,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vFN-zN-W5f" firstAttribute="bottom" secondItem="yre-DY-1JN" secondAttribute="bottom" id="0BC-N5-qqa"/>
                             <constraint firstItem="vFN-zN-W5f" firstAttribute="trailing" secondItem="yre-DY-1JN" secondAttribute="trailing" id="8a8-Rp-JXf"/>
                             <constraint firstItem="yre-DY-1JN" firstAttribute="top" secondItem="vFN-zN-W5f" secondAttribute="top" id="MHS-VI-Wbg"/>
                             <constraint firstItem="yre-DY-1JN" firstAttribute="leading" secondItem="vFN-zN-W5f" secondAttribute="leading" id="e72-Me-Ef6"/>
+                            <constraint firstAttribute="bottom" secondItem="yre-DY-1JN" secondAttribute="bottom" id="gxc-gG-K8o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vFN-zN-W5f"/>
                     </view>

@@ -30,6 +30,7 @@
 		93719A36218F33D6000FB8F7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A35218F33D6000FB8F7 /* UIView+Extension.swift */; };
 		93719A38218F368D000FB8F7 /* PlayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A37218F368D000FB8F7 /* PlayListCell.swift */; };
 		93719A3A218F370E000FB8F7 /* PlayListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A39218F370E000FB8F7 /* PlayListCellViewModel.swift */; };
+		93719A3D218F3B72000FB8F7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A3C218F3B72000FB8F7 /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		93719A35218F33D6000FB8F7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		93719A37218F368D000FB8F7 /* PlayListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCell.swift; sourceTree = "<group>"; };
 		93719A39218F370E000FB8F7 /* PlayListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCellViewModel.swift; sourceTree = "<group>"; };
+		93719A3C218F3B72000FB8F7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +139,8 @@
 			children = (
 				935D6EF121873CBE006D6ACB /* AppDelegate.swift */,
 				935D6EF521873CBE006D6ACB /* Main.storyboard */,
-				93719A10218EE67C000FB8F7 /* RootViewController.swift */,
 				935D6EFA21873CBF006D6ACB /* LaunchScreen.storyboard */,
+				93719A3B218F398D000FB8F7 /* Root */,
 				93719A1B218F2AA1000FB8F7 /* Player */,
 				93719A1A218F2A86000FB8F7 /* PlayList */,
 				93719A26218F2BE5000FB8F7 /* Common */,
@@ -240,6 +242,15 @@
 				93719A35218F33D6000FB8F7 /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		93719A3B218F398D000FB8F7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				93719A10218EE67C000FB8F7 /* RootViewController.swift */,
+				93719A3C218F3B72000FB8F7 /* RootViewModel.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +422,7 @@
 				93719A23218F2B9D000FB8F7 /* PlayListController.swift in Sources */,
 				93719A38218F368D000FB8F7 /* PlayListCell.swift in Sources */,
 				93719A3A218F370E000FB8F7 /* PlayListCellViewModel.swift in Sources */,
+				93719A3D218F3B72000FB8F7 /* RootViewModel.swift in Sources */,
 				93719A11218EE67C000FB8F7 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

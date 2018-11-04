@@ -21,10 +21,9 @@ class PlayListController: UIViewController, Bindable {
 }
 
 extension PlayListController {
-    static func create(with viewModel: PlayListViewModel) -> PlayListController {
+    static func create() -> PlayListController {
         let sb = UIStoryboard(name: "PlayList", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "PlayList") as! PlayListController
-        vc.bindViewModel(to: viewModel)
         return vc
     }
 }
