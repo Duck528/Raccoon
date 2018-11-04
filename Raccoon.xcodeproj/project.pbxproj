@@ -31,6 +31,7 @@
 		93719A38218F368D000FB8F7 /* PlayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A37218F368D000FB8F7 /* PlayListCell.swift */; };
 		93719A3A218F370E000FB8F7 /* PlayListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A39218F370E000FB8F7 /* PlayListCellViewModel.swift */; };
 		93719A3D218F3B72000FB8F7 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A3C218F3B72000FB8F7 /* RootViewModel.swift */; };
+		93719A40218F48C2000FB8F7 /* CardsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93719A3F218F48C2000FB8F7 /* CardsLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		93719A37218F368D000FB8F7 /* PlayListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCell.swift; sourceTree = "<group>"; };
 		93719A39218F370E000FB8F7 /* PlayListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCellViewModel.swift; sourceTree = "<group>"; };
 		93719A3C218F3B72000FB8F7 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		93719A3F218F48C2000FB8F7 /* CardsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		93719A26218F2BE5000FB8F7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				93719A3E218F48B4000FB8F7 /* Layout */,
 				93719A32218F3344000FB8F7 /* Extension */,
 				93719A31218F333C000FB8F7 /* Util */,
 			);
@@ -251,6 +254,14 @@
 				93719A3C218F3B72000FB8F7 /* RootViewModel.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		93719A3E218F48B4000FB8F7 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				93719A3F218F48C2000FB8F7 /* CardsLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93719A40218F48C2000FB8F7 /* CardsLayout.swift in Sources */,
 				93719A28218F2C00000FB8F7 /* Bindable.swift in Sources */,
 				93719A34218F3355000FB8F7 /* UIWindow+Extension.swift in Sources */,
 				93719A25218F2BB7000FB8F7 /* PlayListViewModel.swift in Sources */,
