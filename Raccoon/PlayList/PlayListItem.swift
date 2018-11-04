@@ -10,5 +10,11 @@ import Foundation
 import RxCocoa
 
 struct PlayListItem {
+    let title: String
+    let imageUrlString: String
     
+    init?(title: String, imageUrlString: String) {
+        self.title = title
+        self.imageUrlString = imageUrlString
+    }
 }
