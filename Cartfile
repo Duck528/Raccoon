@@ -1,0 +1,2 @@
+github "hyperoslo/Gallery"
+github "ReactiveX/RxSwift" ~> 4.2
