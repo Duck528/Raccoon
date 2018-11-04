@@ -41,6 +41,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="L6f-9c-y7Q"/>
+                    <connections>
+                        <outlet property="containerView" destination="yw6-Ug-eIx" id="km5-DO-Ap0"/>
+                        <outlet property="statusBackView" destination="tNh-UE-LKt" id="i1Q-4u-msP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

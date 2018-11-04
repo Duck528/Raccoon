@@ -11,4 +11,11 @@ import UIKit
 
 class RootViewController: UIViewController {
     
+    @IBOutlet weak var statusBackView: UIView!
+    @IBOutlet weak var containerView: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        statusBackView.findConstraint(for: .height)?.constant = UIWindow.hasNotch ? 44 : 20
+    }
 }
