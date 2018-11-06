@@ -24,6 +24,19 @@ class PlayListController: UIViewController, Bindable {
     }
 }
 
+extension PlayListController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 320, height: 520)
+    }
+}
+
+extension PlayListController {
+    private func bindCollectionView() {
+        
+    }
+}
+
+
 extension PlayListController {
     static func create() -> PlayListController {
         let sb = UIStoryboard(name: "PlayList", bundle: nil)
@@ -32,6 +45,4 @@ extension PlayListController {
     }
 }
 
-extension PlayListController: UICollectionViewDataSource {
-    
-}
+
