@@ -24,7 +24,9 @@ class RootViewController: UIViewController {
         
         switch identifier {
         case "PlayList":
-            let vc = segue.destination as! PlayListController
+            guard let vc = segue.destination as? PlayListController else {
+                return
+            }
             vc.bindViewModel(to: viewModel.playListViewModel)
         default:
             break
