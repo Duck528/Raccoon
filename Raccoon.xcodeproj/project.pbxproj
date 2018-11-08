@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9348E19921946D2C004D94C5 /* PlayItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348E19821946D2C004D94C5 /* PlayItemRepository.swift */; };
 		9348E19E21946EF1004D94C5 /* FetchPlayListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348E19D21946EF1004D94C5 /* FetchPlayListUsecase.swift */; };
+		9348E1A22194786B004D94C5 /* CardRotateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348E1A12194786B004D94C5 /* CardRotateLayout.swift */; };
 		935D6EF221873CBE006D6ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D6EF121873CBE006D6ACB /* AppDelegate.swift */; };
 		935D6EF721873CBE006D6ACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935D6EF521873CBE006D6ACB /* Main.storyboard */; };
 		935D6EF921873CBF006D6ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935D6EF821873CBF006D6ACB /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		9348E19821946D2C004D94C5 /* PlayItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayItemRepository.swift; sourceTree = "<group>"; };
 		9348E19D21946EF1004D94C5 /* FetchPlayListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPlayListUsecase.swift; sourceTree = "<group>"; };
+		9348E1A12194786B004D94C5 /* CardRotateLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRotateLayout.swift; sourceTree = "<group>"; };
 		935D6EEE21873CBE006D6ACB /* Raccoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raccoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935D6EF121873CBE006D6ACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935D6EF621873CBE006D6ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				93719A3F218F48C2000FB8F7 /* CardsLayout.swift */,
+				9348E1A12194786B004D94C5 /* CardRotateLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				93719A43218F62DC000FB8F7 /* PlayListItem.swift in Sources */,
 				93719A2A218F2E6B000FB8F7 /* Permission.swift in Sources */,
 				935D6EF221873CBE006D6ACB /* AppDelegate.swift in Sources */,
+				9348E1A22194786B004D94C5 /* CardRotateLayout.swift in Sources */,
 				93719A23218F2B9D000FB8F7 /* PlayListController.swift in Sources */,
 				93719A38218F368D000FB8F7 /* PlayListCell.swift in Sources */,
 				93719A3A218F370E000FB8F7 /* PlayListCellViewModel.swift in Sources */,

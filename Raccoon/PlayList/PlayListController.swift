@@ -22,12 +22,29 @@ class PlayListController: UIViewController, Bindable {
     
     var viewModel: PlayListViewModel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupCollectionViewLayout()
+        collectionView.reloadData()
+    }
+    
     func bindViewModel() {
         bindCollectionView()
     }
 }
 
-extension PlayListController: UICollectionViewDelegateFlowLayout {
+extension PlayListController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? PlayListCell else {
+            return UICollectionViewCell()
+        }
+        return cell
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 320, height: 520)
     }
@@ -35,7 +52,15 @@ extension PlayListController: UICollectionViewDelegateFlowLayout {
 
 extension PlayListController {
     private func bindCollectionView() {
+//        collectionView.delegate = self
+//        collectionView.dataSource = self
+//        viewModel.cellViewModels
+//            .subscribe(onNext: { [weak self] _ in
+//                self?.collectionView.reloadData()
+//            }).disposed(by: disposeBag)
+//
         collectionView.rx.setDelegate(self).disposed(by: disposeBag)
+        collectionView.rx.setDataSource(self).disposed(by: disposeBag)
         let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<Void, PlayListCellViewModel>>(
             configureCell: { _, collectionView, indexPath, cellViewModel -> UICollectionViewCell in
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? PlayListCell else {
@@ -44,6 +69,7 @@ extension PlayListController {
                 cell.bindViewModel(to: cellViewModel)
                 return cell
         })
+        
         viewModel.cellViewModels
             .map { [SectionModel<Void, PlayListCellViewModel>(model: (), items: $0)] }
             .bind(to: collectionView.rx.items(dataSource: dataSource))
@@ -58,6 +84,11 @@ extension PlayListController {
         let vc = sb.instantiateViewController(withIdentifier: "PlayList") as! PlayListController
         return vc
     }
+    
+    private func setupCollectionViewLayout() {
+        if let cardRotateLayout = collectionView.collectionViewLayout as? CardRotateLayout {
+            cardRotateLayout.cardSize = CGSize(width: 320, height: 400)
+        }
+    }
 }
-
 
