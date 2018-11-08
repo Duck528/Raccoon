@@ -9,7 +9,7 @@
 import Foundation
 import RxCocoa
 
-struct PlayListItem {
+struct PlayItem {
     let title: String
     let imageUrlString: String
     

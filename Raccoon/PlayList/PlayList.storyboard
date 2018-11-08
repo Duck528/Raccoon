@@ -22,13 +22,26 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewLayout key="collectionViewLayout" id="Tqb-Vd-CJ0" customClass="CardsLayout" customModule="Raccoon" customModuleProvider="target"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KLK-L2-WXq" customClass="PlayListCell" customModule="Raccoon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="KLK-L2-WXq" customClass="PlayListCell" customModule="Raccoon" customModuleProvider="target">
+                                        <rect key="frame" x="-3" y="0.0" width="381" height="249"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w3-Xg-LUD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="381" height="249"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="6w3-Xg-LUD" firstAttribute="leading" secondItem="KLK-L2-WXq" secondAttribute="leading" id="5R0-qF-j1Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="6w3-Xg-LUD" secondAttribute="trailing" id="TPi-OB-gqc"/>
+                                            <constraint firstItem="6w3-Xg-LUD" firstAttribute="top" secondItem="KLK-L2-WXq" secondAttribute="top" id="m1Z-Pd-eYT"/>
+                                            <constraint firstAttribute="bottom" secondItem="6w3-Xg-LUD" secondAttribute="bottom" id="mJ3-fM-zus"/>
+                                        </constraints>
+                                        <size key="customSize" width="381" height="249"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

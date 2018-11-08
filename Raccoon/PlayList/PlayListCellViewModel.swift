@@ -10,5 +10,9 @@ import Foundation
 import RxCocoa
 
 class PlayListCellViewModel {
+    let playItem: BehaviorRelay<PlayItem>
     
+    init(playItem: PlayItem) {
+        self.playItem = BehaviorRelay<PlayItem>(value: playItem)
+    }
 }

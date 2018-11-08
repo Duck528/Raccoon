@@ -9,18 +9,21 @@
 import Foundation
 import UIKit
 import RxCocoa
+import RxSwift
+import RxDataSources
 
 class PlayListController: UIViewController, Bindable {
     typealias ViewModelType = PlayListViewModel
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private let cellReuseID = "CardCell"
+    let disposeBag = DisposeBag()
+    let cellReuseID = "CardCell"
     
     var viewModel: PlayListViewModel!
     
     func bindViewModel() {
-        
+        bindCollectionView()
     }
 }
 
@@ -32,7 +35,19 @@ extension PlayListController: UICollectionViewDelegateFlowLayout {
 
 extension PlayListController {
     private func bindCollectionView() {
-        
+        collectionView.rx.setDelegate(self).disposed(by: disposeBag)
+        let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<Void, PlayListCellViewModel>>(
+            configureCell: { _, collectionView, indexPath, cellViewModel -> UICollectionViewCell in
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? PlayListCell else {
+                    return UICollectionViewCell()
+                }
+                cell.bindViewModel(to: cellViewModel)
+                return cell
+        })
+        viewModel.cellViewModels
+            .map { [SectionModel<Void, PlayListCellViewModel>(model: (), items: $0)] }
+            .bind(to: collectionView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
     }
 }
 
