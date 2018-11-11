@@ -44,7 +44,12 @@ class CardRotateLayout: UICollectionViewLayout {
     }
     
     var numberOfItems: Int {
-        return collectionView.numberOfItems(inSection: 0)
+        let numberOfSections = collectionView.numberOfSections
+        if numberOfSections > 0 {
+            return collectionView.numberOfItems(inSection: 0)
+        } else {
+            return 0
+        }
     }
     
     var contentOffset: CGPoint {
